@@ -165,6 +165,7 @@
             Omnifood AI chooses from 5,000+ recipes
           </h2>
         </div>
+
         <div class="container grid grid--3-cols">
           <div class="meal">
             <img
@@ -172,16 +173,23 @@
               class="meal-img"
               alt="Japanese Gyozas"
             />
-
-            <span class="tag">Vegetarian</span>
+            <div class="meal-tags">
+              <span class="tag">Vegetarian</span>
+            </div>
             <p class="meal-title">Japanese Gyozas</p>
             <ul class="meal-attributes">
               <li class="meal-attribute">
-                <ion-icon name="flame-outline"></ion-icon
-                ><span>650 calories</span>
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon
+                ><span><strong>650</strong> calories</span>
               </li>
-              <li class="meal-attribute">NutriScore &reg; 74</li>
-              <li class="meal-attribute">4.9 rating</li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon
+                ><span>NutriScore &reg; <strong>74</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                ><span><strong>4.9</strong> rating</span>
+              </li>
             </ul>
           </div>
           <div class="meal">Meals</div>

@@ -37,6 +37,7 @@ Pragraph default: 1.06
 
 --- 06 BORDER RADIUS
 Default:9px
+ Medium:11px
 
 --- 07 WHITESPACE
 
@@ -163,4 +164,7 @@ body {
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+strong {
+  font-weight: 500;
 }
