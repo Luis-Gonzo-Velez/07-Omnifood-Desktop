@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": null,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": null
+  },
+  "prettier.requireConfig": false
+}

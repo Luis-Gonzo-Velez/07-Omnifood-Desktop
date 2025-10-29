@@ -26,15 +26,20 @@ Pragraph default: 1.06
 -Tints:
 #fdf2e9
 #fae5d3
+#eb984e
 -Shades:
+#45260a
 #cf711f
 -Accents:
 -Greys: 
+#888
+#767676 lightes gray allowed on white only.
 #6F6F6F lightes gray allowed on #fdf2e9 only.
 #555
 #333
 
 --- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER RADIUS
 Default:9px
@@ -52,12 +57,14 @@ Medium:11px
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   /* font-size: 10px; */
   /* 10px / 16px = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
 }
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -74,6 +81,7 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -89,15 +97,23 @@ body {
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -109,21 +125,25 @@ body {
   color: #333;
   letter-spacing: -0.5px;
 }
+
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
+
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
+
 .heading-tertiary {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
+
 .subheading {
   display: block;
   font-size: 1.6rem;
@@ -133,6 +153,9 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+
+
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -143,6 +166,11 @@ body {
   /* color: #fff; */
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* ONLY FOR THE .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* Put a transition on original "state" */
   /* transition: background-color 0.03s; */
@@ -174,6 +202,20 @@ body {
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
 }
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background: #fff;
+  color: #555;
+}
+
+
 
 .link:link,
 .link:visited {
@@ -211,6 +253,13 @@ body {
   color: #e67e22;
 }
 
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.50);
+}
+
 /* HELPER/SETTING CLASSES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -219,6 +268,7 @@ body {
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
+
 .center-test {
   text-align: center !important;
 }
