@@ -1,5 +1,5 @@
 /****************************/
-/* HEADER */
+/* HEADER LUIS*/
 /****************************/
 .header {
   display: flex;
@@ -24,7 +24,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -42,17 +42,39 @@
   color: #cf711f;
 }
 
-.nav-cta.main-nav-link:link,
-.nav-cta.main-nav-link:visited {
+.main-nav-link:link,
+.main-nav-link:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
 }
 
-.nav-cta.main-nav-link:hover,
-.nav-cta.main-nav-link:active {
+.main-nav-link:hover,
+.main-nav-link:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333
+}
+
+/*  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon> */
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /****************************/
@@ -480,7 +502,8 @@ s .meal-content {
 
 .cta {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* 2/3 = 66.6% + 33.3% =  */
+  / grid-template-columns: 2fr 1fr;
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
